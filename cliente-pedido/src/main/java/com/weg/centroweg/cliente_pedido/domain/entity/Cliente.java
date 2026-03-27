@@ -25,4 +25,9 @@ public class Cliente {
 
     @OneToMany(mappedBy = "cliente")
     private List<Pedido>pedidos;
+
+    public Cliente(String nome, String email) {
+        this.nome = nome;
+        this.email = email;
+    }
 }
